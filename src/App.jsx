@@ -6,7 +6,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-// Styled components for better customization
+
 const StyledContainer = styled(Container)(({ theme }) => ({
   marginTop: theme.spacing(4),
   padding: theme.spacing(2),
@@ -62,7 +62,6 @@ const accessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhw
 
         let stockList = [];
 
-        // Handle different response formats
         if (response.data) {
           if (Array.isArray(response.data)) {
             stockList = response.data;
@@ -126,7 +125,7 @@ const accessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhw
 
       let history = [];
       
-      // Handle different response formats
+  
       if (Array.isArray(response.data)) {
         history = response.data;
       } else if (response.data.history) {
